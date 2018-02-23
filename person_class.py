@@ -1,3 +1,5 @@
+from sanitize import *
+
 class Person:
 	__name 		= ''
 	__age		= 0
