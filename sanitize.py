@@ -1,3 +1,8 @@
+def trim( text ):
+	if len(text) <= 0:
+		return 'no input provided'
+	return text.strip()
+
 def make_lower( text ):
 	if len(text) <= 0:
 		return 'no input provided'

@@ -12,12 +12,14 @@ from person_class import *
 from sanitize import *
 
 name 	= input('What is your name?: ')
+name	= trim(name)
 name 	= make_lower(name)
 name 	= make_title(name)
 
 age 	= int(input('How old are you?: '))
 
 city 	= input('In which city do you live?: ')
+city	= trim(city)
 city	= make_title(city)
 
 hobbies = input('What do you enjoy doing?: ') 
