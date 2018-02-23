@@ -9,13 +9,19 @@
 '''
 
 from person_class import *
-
+from sanitize import *
 
 name 	= input('What is your name?: ')
-age 	= int(input('How old are you?: '))
-city 	= input('In which city do you live?: ')
-hobbies 	= input('What do you enjoy doing?: ') 
+name 	= make_lower(name)
+name 	= make_title(name)
 
+age 	= int(input('How old are you?: '))
+
+city 	= input('In which city do you live?: ')
+city	= make_title(city)
+
+hobbies = input('What do you enjoy doing?: ') 
+hobbies	= make_capital(hobbies)
 
 new_person = Person(name, age, city, hobbies)
 print(new_person.get_user_info())
