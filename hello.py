@@ -20,3 +20,4 @@ user = {
 	'hobbies': hobies
 }
 
+print(user)
